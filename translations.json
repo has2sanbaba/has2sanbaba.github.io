@@ -1,12 +1,6 @@
 {
   "en": {
-    "nav": {
-      "home": "Home",
-      "about": "About",
-      "skills": "Skills",
-      "projects": "Projects",
-      "contact": "Contact"
-    },
+    "nav": {"home": "Home", "about": "About", "skills": "Skills", "projects": "Projects", "contact": "Contact"},
     "hero": {
       "title_1": "Muhammad",
       "title_2": "Hassan",
@@ -29,23 +23,17 @@
       "card_2": "Design",
       "card_3": "Deployment"
     },
-    "skills": {
-      "title": "My Skills",
-      "subtitle": "Technologies I work with",
-      "frontend": "Frontend",
-      "backend": "Backend",
-      "database": "Database & Tools"
-    },
+    "skills": {"title": "My Skills", "subtitle": "Technologies I work with", "frontend": "Frontend", "backend": "Backend", "database": "Database & Tools"},
     "projects": {
       "title": "Featured Projects",
       "subtitle": "Some of my recent work",
+      "view_project": "View Project",
       "project_1_title": "E-Commerce Platform",
       "project_1_desc": "Full-stack e-commerce solution with React, Node.js, and MongoDB. Features include real-time inventory, payment processing, and admin dashboard.",
       "project_2_title": "SaaS Dashboard",
       "project_2_desc": "Analytics dashboard for tracking user metrics. Built with React, TypeScript, and real-time data visualization with Chart.js.",
       "project_3_title": "Social Network App",
-      "project_3_desc": "Real-time social platform with messaging, notifications, and media sharing. Laravel backend with Vue.js frontend.",
-      "view_project": "View Project"
+      "project_3_desc": "Real-time social platform with messaging, notifications, and media sharing. Laravel backend with Vue.js frontend."
     },
     "contact": {
       "title": "Get In Touch",
@@ -58,24 +46,19 @@
       "location_text": "London, United Kingdom",
       "email_title": "Email",
       "email_text": "hello@mhb.dev",
-      "social": "Social"
+      "social": "Social",
+      "success": "Thank you for your message! I will get back to you soon."
     },
     "footer": "© 2026 Muhammad Hassan Baba. All rights reserved. | Built with ❤️ and Code"
   },
   "fa": {
-    "nav": {
-      "home": "خانه",
-      "about": "درباره",
-      "skills": "مهارت‌ها",
-      "projects": "پروژه‌ها",
-      "contact": "تماس"
-    },
+    "nav": {"home": "خانه", "about": "درباره", "skills": "مهارت‌ها", "projects": "پروژه‌ها", "contact": "تماس"},
     "hero": {
       "title_1": "محمد",
       "title_2": "حسن",
-      "title_3": "باباخانی",
+      "title_3": "بابا",
       "subtitle": "توسعه‌دهنده Full Stack و معمار دیجیتال",
-      "description": "ایجاد راه‌حل‌های زیبا و کارآمد برای مسائل پیچیده. متخصص در فناوری‌های وب مدرن و معماری مقیاس‌پذیر.",
+      "description": "ایجاد راه‌حل‌های زیبا برای مسائل پیچیده. متخصص در فناوری‌های وب مدرن و معماری مقیاس‌پذیر.",
       "btn_contact": "تماس بگیرید",
       "btn_projects": "دیدن کارهای من",
       "scroll": "برای کاوش اسکرول کنید"
@@ -83,95 +66,78 @@
     "about": {
       "title": "درباره من",
       "subtitle": "من کی هستم و چه کاری انجام می‌دهم",
-      "text_1": "من یک توسعه‌دهنده Full Stack شغوفه‌انگیز هستم که مهارت ایجاد برنامه‌های وبی دارم که نه تنها کارآمد بلکه زیبا و سریع هستند. با تجربه در تمام سطح توسعه، راه‌حل‌هایی ارائه می‌دهم که از انتظارات فراتر می‌رود.",
-      "text_2": "بر اساس لندن، با استارت‌آپ‌ها و شرکت‌ها کار می‌کنم تا راه‌حل‌های دیجیتال بسازم که تأثیر واقعی داشته باشند. رویکرد من تعالی فنی را با حل‌حل خلاقانه مسائل ترکیب می‌کند.",
+      "text_1": "من یک توسعه‌دهنده Full Stack متعهد هستم که با خلق برنامه‌های وبی زیبا و کاربردی، راه‌حل‌هایی ارائه می‌دهم که هم عملکردی هستند و هم جذاب.",
+      "text_2": "بر پایه لندن، با استارت‌آپ‌ها و شرکت‌ها کار می‌کنم تا راه‌حل‌های دیجیتال مؤثری بسازم. رویکرد من ترکیبی از دقت فنی و خلاقیت در حل مسئله است.",
       "years": "سال تجربه",
-      "projects": "پروژه انجام شده",
+      "projects": "پروژه انجام‌شده",
       "satisfaction": "رضایت مشتری",
       "card_1": "توسعه",
       "card_2": "طراحی",
       "card_3": "استقرار"
     },
-    "skills": {
-      "title": "مهارت‌های من",
-      "subtitle": "فناوری‌هایی که با آن کار می‌کنم",
-      "frontend": "بخش جلویی",
-      "backend": "بخش پشتیبانی",
-      "database": "پایگاه داده و ابزارها"
-    },
+    "skills": {"title": "مهارت‌های من", "subtitle": "فناوری‌هایی که با آن‌ها کار می‌کنم", "frontend": "فرانت‌اند", "backend": "بک‌اند", "database": "پایگاه داده و ابزارها"},
     "projects": {
       "title": "پروژه‌های برجسته",
       "subtitle": "برخی از کارهای اخیر من",
+      "view_project": "مشاهده پروژه",
       "project_1_title": "پلتفرم تجارت الکترونیک",
-      "project_1_desc": "راه‌حل تجارت الکترونیک کامل با React، Node.js و MongoDB. ویژگی‌ها شامل موجودی بلادرنگ، پردازش پرداخت و داشبورد ادمین هستند.",
+      "project_1_desc": "راه‌حل تجارت الکترونیک کامل با React، Node.js و MongoDB. شامل موجودی لحظه‌ای، پرداخت و داشبورد مدیریت است.",
       "project_2_title": "داشبورد SaaS",
-      "project_2_desc": "داشبورد تجزیه و تحلیل برای ردیابی معیارهای کاربر. ساخته شده با React، TypeScript و تصورسازی داده‌های بلادرنگ با Chart.js.",
-      "project_3_title": "برنامه شبکه اجتماعی",
-      "project_3_desc": "پلتفرم اجتماعی بلادرنگ با پیام‌رسانی، اطلاع‌رسانی و اشتراک رسانه. بخش پشتیبانی Laravel و بخش جلویی Vue.js.",
-      "view_project": "دیدن پروژه"
+      "project_2_desc": "داشبورد تحلیلی برای پیگیری معیارهای کاربر. ساخته‌شده با React، TypeScript و بازنمایی داده‌ها با Chart.js.",
+      "project_3_title": "اپلیکیشن شبکه اجتماعی",
+      "project_3_desc": "پلتفرم شبکه اجتماعی لحظه‌ای با پیام‌رسانی، اعلان‌ها و اشتراک‌گذاری رسانه. بک‌اند Laravel و فرانت‌اند Vue.js."
     },
     "contact": {
-      "title": "تماس بگیرید",
-      "subtitle": "بیایید برای پروژه بعدی شما با هم کار کنیم",
+      "title": "در تماس باشید",
+      "subtitle": "بیایید در پروژه بعدی شما با هم همکاری کنیم",
       "name": "نام شما",
       "email": "ایمیل شما",
       "message": "پیام شما",
       "send": "ارسال پیام",
       "location": "موقعیت",
-      "location_text": "لندن، بریتانیا",
+      "location_text": "لندن، انگلستان",
       "email_title": "ایمیل",
       "email_text": "hello@mhb.dev",
-      "social": "اجتماعی"
+      "social": "شبکه‌های اجتماعی",
+      "success": "سپاس! پیام شما دریافت شد و در اولین فرصت پاسخ می‌دهم."
     },
-    "footer": "© 2026 محمد حسن باباخانی. تمام حقوق محفوظ است. | ساخته شده با ❤️ و کد"
+    "footer": "© 2026 محمد حسن بابا. کلیه حقوق محفوظ است. | ساخته‌شده با ❤️ و کد"
   },
   "ru": {
-    "nav": {
-      "home": "Главная",
-      "about": "О себе",
-      "skills": "Навыки",
-      "projects": "Проекты",
-      "contact": "Контакты"
-    },
+    "nav": {"home": "Главная", "about": "О себе", "skills": "Навыки", "projects": "Проекты", "contact": "Контакты"},
     "hero": {
       "title_1": "Мухаммад",
       "title_2": "Хасан",
       "title_3": "Баба",
       "subtitle": "Full Stack разработчик и цифровой архитектор",
-      "description": "Создание элегантных решений сложных проблем. Специализация на современных веб-технологиях и масштабируемой архитектуре.",
-      "btn_contact": "Свяжитесь со мной",
+      "description": "Создание элегантных решений для сложных задач. Специализация на современных веб-технологиях и масштабируемой архитектуре.",
+      "btn_contact": "Связаться со мной",
       "btn_projects": "Посмотреть мои работы",
-      "scroll": "Прокрутите для исследования"
+      "scroll": "Прокрутите для просмотра"
     },
     "about": {
       "title": "Обо мне",
-      "subtitle": "Кто я и чем я занимаюсь",
-      "text_1": "Я увлеченный разработчик Full Stack с талантом к созданию веб-приложений, которые не только функциональны, но и красивы и производительны. Имея опыт работы на всех уровнях разработки, я предоставляю решения, превосходящие ожидания.",
-      "text_2": "Работаю в Лондоне со стартапами и компаниями, создавая цифровые решения, которые имеют реальное влияние. Мой подход сочетает техническое совершенство с творческим решением проблем.",
+      "subtitle": "Кто я и чем занимаюсь",
+      "text_1": "Я увлечённый Full Stack разработчик, создающий веб-приложения, которые не только полезны, но и красивы, быстры и удобны в использовании.",
+      "text_2": "Работаю в Лондоне и помогаю стартапам и компаниям создавать эффективные цифровые решения. Мой подход сочетает техническое мастерство и креативное мышление.",
       "years": "Лет опыта",
-      "projects": "Завершенных проектов",
+      "projects": "Завершённых проектов",
       "satisfaction": "Удовлетворение клиентов",
       "card_1": "Разработка",
       "card_2": "Дизайн",
       "card_3": "Развертывание"
     },
-    "skills": {
-      "title": "Мои навыки",
-      "subtitle": "Технологии, с которыми я работаю",
-      "frontend": "Фронтенд",
-      "backend": "Бэкенд",
-      "database": "База данных и инструменты"
-    },
+    "skills": {"title": "Мои навыки", "subtitle": "Технологии, с которыми я работаю", "frontend": "Фронтенд", "backend": "Бэкенд", "database": "База данных и инструменты"},
     "projects": {
       "title": "Избранные проекты",
       "subtitle": "Некоторые из моих последних работ",
+      "view_project": "Смотреть проект",
       "project_1_title": "Платформа электронной коммерции",
-      "project_1_desc": "Полнофункциональное решение электронной коммерции с React, Node.js и MongoDB. Включает инвентаризацию в реальном времени, обработку платежей и админ-панель.",
-      "project_2_title": "Информационная панель SaaS",
-      "project_2_desc": "Панель аналитики для отслеживания показателей пользователя. Создана с использованием React, TypeScript и визуализации данных в реальном времени с Chart.js.",
+      "project_1_desc": "Полнофункциональное решение для электронной коммерции на React, Node.js и MongoDB. Включает склад в реальном времени, платежи и админ-панель.",
+      "project_2_title": "Панель SaaS",
+      "project_2_desc": "Аналитическая панель для отслеживания пользовательских метрик. Создана с React, TypeScript и визуализацией данных в реальном времени через Chart.js.",
       "project_3_title": "Приложение социальной сети",
-      "project_3_desc": "Платформа соци��льной сети в реальном времени с обмещением сообщениями, уведомлениями и обменом медиа. Бэкенд на Laravel и фронтенд на Vue.js.",
-      "view_project": "Посмотреть проект"
+      "project_3_desc": "Платформа социальной сети в реальном времени с сообщениями, уведомлениями и обменом медиа. Бэкенд на Laravel и фронтенд на Vue.js."
     },
     "contact": {
       "title": "Свяжитесь со мной",
@@ -181,64 +147,53 @@
       "message": "Ваше сообщение",
       "send": "Отправить сообщение",
       "location": "Местоположение",
-      "location_text": "Лондон, Соединённое Королевство",
+      "location_text": "Лондон, Великобритания",
       "email_title": "Email",
       "email_text": "hello@mhb.dev",
-      "social": "Социальные сети"
+      "social": "Соцсети",
+      "success": "Спасибо! Ваше сообщение получено, и я скоро свяжусь с вами."
     },
     "footer": "© 2026 Мухаммад Хасан Баба. Все права защищены. | Создано с ❤️ и кодом"
   },
   "zh": {
-    "nav": {
-      "home": "主页",
-      "about": "关于",
-      "skills": "技能",
-      "projects": "项目",
-      "contact": "联系"
-    },
+    "nav": {"home": "主页", "about": "关于", "skills": "技能", "projects": "项目", "contact": "联系"},
     "hero": {
       "title_1": "穆罕默德",
       "title_2": "哈桑",
       "title_3": "巴巴",
       "subtitle": "全栈开发者和数字架构师",
-      "description": "为复杂问题创造优雅的解决方案。专精于现代网络技术和可扩展的架构。",
+      "description": "为复杂问题创造优雅而高效的解决方案，专注于现代 Web 技术与可扩展架构。",
       "btn_contact": "联系我",
       "btn_projects": "查看我的作品",
-      "scroll": "向下滚动查看"
+      "scroll": "滚动查看"
     },
     "about": {
       "title": "关于我",
       "subtitle": "我是谁以及我做什么",
-      "text_1": "我是一名充满热情的全栈开发者，擅长创建不仅功能齐全，而且美观高效的网络应用程序。凭借在整个开发堆栈中的经验，我提供超出预期的解决方案。",
-      "text_2": "我在伦敦工作，与初创公司和企业合作，打造具有真实影响力的数字解决方案。我的方法将技术卓越与创意解决问题相结合。",
-      "years": "年工作经验",
+      "text_1": "我是一名充满热情的全栈开发者，擅长打造既实用又美观、性能卓越的 Web 应用程序。",
+      "text_2": "我在伦敦工作，并与创业公司和企业合作，构建真正有影响力的数字解决方案。我的方法结合了技术专长与创造性的解决问题方式。",
+      "years": "工作年限",
       "projects": "已交付项目",
       "satisfaction": "客户满意度",
       "card_1": "开发",
       "card_2": "设计",
       "card_3": "部署"
     },
-    "skills": {
-      "title": "我的技能",
-      "subtitle": "我使用的技术",
-      "frontend": "前端",
-      "backend": "后端",
-      "database": "数据库和工具"
-    },
+    "skills": {"title": "我的技能", "subtitle": "我使用的技术", "frontend": "前端", "backend": "后端", "database": "数据库和工具"},
     "projects": {
       "title": "精选项目",
-      "subtitle": "我最近的一些工作",
+      "subtitle": "我最近的一些作品",
+      "view_project": "查看项目",
       "project_1_title": "电子商务平台",
-      "project_1_desc": "使用 React、Node.js 和 MongoDB 的全栈电子商务解决方案。功能包括实时库存、支付处理和管理员仪表板。",
-      "project_2_title": "SaaS 仪表板",
-      "project_2_desc": "用于跟踪用户指标的分析仪表板。使用 React、TypeScript 构建，并使用 Chart.js 进行实时数据可视化。",
+      "project_1_desc": "基于 React、Node.js 和 MongoDB 的全栈电商解决方案，包括实时库存、支付处理和管理面板。",
+      "project_2_title": "SaaS 面板",
+      "project_2_desc": "用于跟踪用户指标的分析面板，使用 React、TypeScript 和 Chart.js 实时可视化数据。",
       "project_3_title": "社交网络应用",
-      "project_3_desc": "具有消息、通知和媒体共享功能的实时社交平台。使用 Laravel 后端和 Vue.js 前端。",
-      "view_project": "查看项目"
+      "project_3_desc": "实时社交平台，支持消息、通知和媒体共享。后端为 Laravel，前端为 Vue.js。"
     },
     "contact": {
       "title": "联系我",
-      "subtitle": "让我们在你的下一个项目上合作",
+      "subtitle": "让我们一起为您的下一个项目合作",
       "name": "您的名字",
       "email": "您的电子邮件",
       "message": "您的消息",
@@ -247,8 +202,9 @@
       "location_text": "伦敦，英国",
       "email_title": "电子邮件",
       "email_text": "hello@mhb.dev",
-      "social": "社交"
+      "social": "社交媒体",
+      "success": "谢谢！您的消息已收到，我会尽快回复您。"
     },
-    "footer": "© 2026 穆罕默德·哈桑·巴巴。版权所有。| 使用 ❤️ 和代码构建"
+    "footer": "© 2026 穆罕默德·哈桑·巴巴。保留所有权利。| 使用 ❤️ 与代码构建"
   }
 }
