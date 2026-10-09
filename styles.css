@@ -58,6 +58,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 16px;
 }
 
 .logo {
@@ -77,6 +78,9 @@ body {
 .nav-menu {
     display: flex;
     gap: 2rem;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
 }
 
 .nav-link {
@@ -104,8 +108,36 @@ body {
     transition: width 0.3s ease;
 }
 
-.nav-link:hover::after {
+.nav-link:hover::after,
+.nav-link.active::after {
     width: 100%;
+}
+
+.language-switcher {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 999px;
+    padding: 0.25rem;
+}
+
+.lang-btn {
+    border: none;
+    background: transparent;
+    color: var(--text-light);
+    border-radius: 999px;
+    padding: 0.35rem 0.6rem;
+    cursor: pointer;
+    font-size: 0.72rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.lang-btn.active {
+    background: linear-gradient(135deg, var(--accent-color), var(--accent-purple));
+    color: #07111c;
 }
 
 .hamburger {
@@ -247,7 +279,6 @@ body {
     background: rgba(0, 217, 255, 0.1);
 }
 
-/* 3D Cube */
 .hero-visual {
     animation: fadeInRight 0.8s ease;
     display: flex;
@@ -713,6 +744,7 @@ section {
     border: 1px solid rgba(0, 217, 255, 0.2);
     border-radius: 50%;
     transition: all 0.3s ease;
+    color: var(--text-light);
 }
 
 .social-links a:hover {
@@ -740,6 +772,27 @@ section {
 @keyframes heartbeat {
     0%, 100% { transform: scale(1); }
     50% { transform: scale(1.2); }
+}
+
+html[dir='rtl'] body,
+html[dir='rtl'] .nav-menu,
+html[dir='rtl'] .hero-content .container,
+html[dir='rtl'] .contact-content,
+html[dir='rtl'] .about-content {
+    direction: rtl;
+}
+
+html[dir='rtl'] .navbar-content {
+    flex-direction: row-reverse;
+}
+
+html[dir='rtl'] .language-switcher {
+    margin-inline-start: 0;
+}
+
+html[dir='rtl'] .logo-icon {
+    margin-right: 0;
+    margin-left: 0.5rem;
 }
 
 /* ===========================
@@ -770,6 +823,10 @@ section {
     .nav-link {
         padding: 1rem 2rem;
         border-radius: 0;
+    }
+
+    .language-switcher {
+        margin-left: auto;
     }
 
     .hamburger {
