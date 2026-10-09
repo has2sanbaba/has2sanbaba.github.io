@@ -9,20 +9,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="container navbar-content">
             <div class="logo">
                 <span class="logo-icon">⚡</span> MHB
             </div>
+
             <div class="nav-menu">
-                <a href="#home" class="nav-link active">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#home" class="nav-link active" data-i18n="nav.home">Home</a>
+                <a href="#about" class="nav-link" data-i18n="nav.about">About</a>
+                <a href="#skills" class="nav-link" data-i18n="nav.skills">Skills</a>
+                <a href="#projects" class="nav-link" data-i18n="nav.projects">Projects</a>
+                <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
             </div>
-            <div class="hamburger">
+
+            <div class="language-switcher" aria-label="Language selector">
+                <button class="lang-btn active" type="button" data-lang="en">EN</button>
+                <button class="lang-btn" type="button" data-lang="fa">FA</button>
+                <button class="lang-btn" type="button" data-lang="ru">RU</button>
+                <button class="lang-btn" type="button" data-lang="zh">中文</button>
+            </div>
+
+            <div class="hamburger" aria-label="Open menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -30,26 +38,26 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="stars"></div>
         <div class="hero-content">
             <div class="container">
                 <div class="hero-text">
                     <h1 class="hero-title">
-                        <span class="word">Muhammad</span>
-                        <span class="word">Hassan</span>
-                        <span class="word">Baba</span>
+                        <span class="word" data-i18n="hero.title_1">Muhammad</span>
+                        <span class="word" data-i18n="hero.title_2">Hassan</span>
+                        <span class="word" data-i18n="hero.title_3">Baba</span>
                     </h1>
-                    <p class="hero-subtitle">Full Stack Developer & Digital Architect</p>
-                    <p class="hero-description">
+                    <p class="hero-subtitle" data-i18n="hero.subtitle">Full Stack Developer & Digital Architect</p>
+                    <p class="hero-description" data-i18n="hero.description">
                         Crafting elegant solutions to complex problems. Specialized in modern web technologies and scalable architecture.
                     </p>
                     <div class="hero-actions">
-                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                        <a href="#projects" class="btn btn-outline">View My Work</a>
+                        <a href="#contact" class="btn btn-primary" data-i18n="hero.btn_contact">Get In Touch</a>
+                        <a href="#projects" class="btn btn-outline" data-i18n="hero.btn_projects">View My Work</a>
                     </div>
                 </div>
+
                 <div class="hero-visual">
                     <div class="cube">
                         <div class="cube-face front">React</div>
@@ -62,152 +70,125 @@
                 </div>
             </div>
         </div>
+
         <div class="scroll-indicator">
-            <span>Scroll to explore</span>
+            <span data-i18n="hero.scroll">Scroll to explore</span>
             <div class="scroll-arrow">↓</div>
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
             <div class="section-header">
-                <h2>About Me</h2>
-                <p class="section-subtitle">Who I am and what I do</p>
+                <h2 data-i18n="about.title">About Me</h2>
+                <p class="section-subtitle" data-i18n="about.subtitle">Who I am and what I do</p>
             </div>
-            
+
             <div class="about-content">
                 <div class="about-text">
-                    <p>
-                        I'm a passionate Full Stack Developer with a knack for creating web applications that are not just functional, but beautiful and performant. With experience across the entire technology stack, I bring ideas to life with clean code and thoughtful design.
+                    <p data-i18n="about.text_1">
+                        I'm a passionate Full Stack Developer with a knack for creating web applications that are not just functional, but beautiful and performant. With experience across the entire development stack, I deliver solutions that exceed expectations.
                     </p>
-                    <p>
+                    <p data-i18n="about.text_2">
                         Based in London, I work with startups and companies to build digital solutions that make a real impact. My approach combines technical excellence with creative problem-solving.
                     </p>
                     <div class="about-stats">
                         <div class="stat">
                             <h3>5+</h3>
-                            <p>Years Experience</p>
+                            <p data-i18n="about.years">Years Experience</p>
                         </div>
                         <div class="stat">
                             <h3>30+</h3>
-                            <p>Projects Delivered</p>
+                            <p data-i18n="about.projects">Projects Delivered</p>
                         </div>
                         <div class="stat">
                             <h3>100%</h3>
-                            <p>Client Satisfaction</p>
+                            <p data-i18n="about.satisfaction">Client Satisfaction</p>
                         </div>
                     </div>
                 </div>
+
                 <div class="about-visual">
                     <div class="card-stack">
-                        <div class="card">Development</div>
-                        <div class="card">Design</div>
-                        <div class="card">Deployment</div>
+                        <div class="card" data-i18n="about.card_1">Development</div>
+                        <div class="card" data-i18n="about.card_2">Design</div>
+                        <div class="card" data-i18n="about.card_3">Deployment</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
             <div class="section-header">
-                <h2>My Skills</h2>
-                <p class="section-subtitle">Technologies I work with</p>
+                <h2 data-i18n="skills.title">My Skills</h2>
+                <p class="section-subtitle" data-i18n="skills.subtitle">Technologies I work with</p>
             </div>
 
             <div class="skills-grid">
-                <!-- Frontend -->
                 <div class="skill-category">
-                    <h3><i class="fas fa-paint-brush"></i> Frontend</h3>
+                    <h3><i class="fas fa-paint-brush"></i> <span data-i18n="skills.frontend">Frontend</span></h3>
                     <div class="skill-items">
                         <div class="skill-item">
                             <span class="skill-name">React.js</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 95%"></div>
-                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span class="skill-name">JavaScript / TypeScript</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 90%"></div>
-                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span class="skill-name">HTML / CSS / SCSS</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 95%"></div>
-                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span class="skill-name">UI/UX Design</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Backend -->
                 <div class="skill-category">
-                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <h3><i class="fas fa-server"></i> <span data-i18n="skills.backend">Backend</span></h3>
                     <div class="skill-items">
                         <div class="skill-item">
                             <span class="skill-name">Node.js / Express</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 92%"></div>
-                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 92%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span class="skill-name">Laravel / PHP</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 88%"></div>
-                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 88%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span class="skill-name">Python / Django</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span class="skill-name">REST APIs</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 90%"></div>
-                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Database & Tools -->
                 <div class="skill-category">
-                    <h3><i class="fas fa-database"></i> Database & Tools</h3>
+                    <h3><i class="fas fa-database"></i> <span data-i18n="skills.database">Database & Tools</span></h3>
                     <div class="skill-items">
                         <div class="skill-item">
                             <span class="skill-name">PostgreSQL / MySQL</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 88%"></div>
-                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 88%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span class="skill-name">MongoDB / Firebase</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span class="skill-name">Git / GitHub</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 95%"></div>
-                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span class="skill-name">Docker & DevOps</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 82%"></div>
-                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 82%"></div></div>
                         </div>
                     </div>
                 </div>
@@ -215,24 +196,23 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
             <div class="section-header">
-                <h2>Featured Projects</h2>
-                <p class="section-subtitle">Some of my recent work</p>
+                <h2 data-i18n="projects.title">Featured Projects</h2>
+                <p class="section-subtitle" data-i18n="projects.subtitle">Some of my recent work</p>
             </div>
 
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
                         <div class="project-overlay">
-                            <a href="#" class="project-link">View Project</a>
+                            <a href="#" class="project-link" data-i18n="projects.view_project">View Project</a>
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3>E-Commerce Platform</h3>
-                        <p>Full-stack e-commerce solution with React, Node.js, and MongoDB. Features include real-time inventory, payment processing, and admin dashboard.</p>
+                        <h3 data-i18n="projects.project_1_title">E-Commerce Platform</h3>
+                        <p data-i18n="projects.project_1_desc">Full-stack e-commerce solution with React, Node.js, and MongoDB. Features include real-time inventory, payment processing, and admin dashboard.</p>
                         <div class="project-tags">
                             <span>React</span>
                             <span>Node.js</span>
@@ -244,12 +224,12 @@
                 <div class="project-card">
                     <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
                         <div class="project-overlay">
-                            <a href="#" class="project-link">View Project</a>
+                            <a href="#" class="project-link" data-i18n="projects.view_project">View Project</a>
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3>SaaS Dashboard</h3>
-                        <p>Analytics dashboard for tracking user metrics. Built with React, TypeScript, and real-time data visualization with Chart.js.</p>
+                        <h3 data-i18n="projects.project_2_title">SaaS Dashboard</h3>
+                        <p data-i18n="projects.project_2_desc">Analytics dashboard for tracking user metrics. Built with React, TypeScript, and real-time data visualization with Chart.js.</p>
                         <div class="project-tags">
                             <span>React</span>
                             <span>TypeScript</span>
@@ -261,12 +241,12 @@
                 <div class="project-card">
                     <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
                         <div class="project-overlay">
-                            <a href="#" class="project-link">View Project</a>
+                            <a href="#" class="project-link" data-i18n="projects.view_project">View Project</a>
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3>Social Network App</h3>
-                        <p>Real-time social platform with messaging, notifications, and media sharing. Laravel backend with Vue.js frontend.</p>
+                        <h3 data-i18n="projects.project_3_title">Social Network App</h3>
+                        <p data-i18n="projects.project_3_desc">Real-time social platform with messaging, notifications, and media sharing. Laravel backend with Vue.js frontend.</p>
                         <div class="project-tags">
                             <span>Laravel</span>
                             <span>Vue.js</span>
@@ -278,45 +258,44 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
-                <h2>Get In Touch</h2>
-                <p class="section-subtitle">Let's work together on your next project</p>
+                <h2 data-i18n="contact.title">Get In Touch</h2>
+                <p class="section-subtitle" data-i18n="contact.subtitle">Let's work together on your next project</p>
             </div>
 
             <div class="contact-content">
                 <div class="contact-form-wrapper">
                     <form class="contact-form" id="contactForm">
                         <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
+                            <input type="text" data-i18n-placeholder="contact.name" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
+                            <input type="email" data-i18n-placeholder="contact.email" placeholder="Your Email" required>
                         </div>
                         <div class="form-group">
-                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                            <textarea rows="5" data-i18n-placeholder="contact.message" placeholder="Your Message" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <button type="submit" class="btn btn-primary" data-i18n="contact.send">Send Message</button>
                     </form>
                 </div>
 
                 <div class="contact-info">
                     <div class="info-box">
-                        <h3><i class="fas fa-map-marker-alt"></i> Location</h3>
-                        <p>London, United Kingdom</p>
+                        <h3><i class="fas fa-map-marker-alt"></i> <span data-i18n="contact.location">Location</span></h3>
+                        <p data-i18n="contact.location_text">London, United Kingdom</p>
                     </div>
                     <div class="info-box">
-                        <h3><i class="fas fa-envelope"></i> Email</h3>
-                        <p><a href="mailto:hello@mhb.dev">hello@mhb.dev</a></p>
+                        <h3><i class="fas fa-envelope"></i> <span data-i18n="contact.email_title">Email</span></h3>
+                        <p><a href="mailto:hello@mhb.dev" data-i18n="contact.email_text">hello@mhb.dev</a></p>
                     </div>
                     <div class="info-box">
-                        <h3><i class="fas fa-globe"></i> Social</h3>
+                        <h3><i class="fas fa-globe"></i> <span data-i18n="contact.social">Social</span></h3>
                         <div class="social-links">
-                            <a href="https://github.com/has2sanbaba" target="_blank"><i class="fab fa-github"></i></a>
-                            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-                            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://github.com/has2sanbaba" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                         </div>
                     </div>
                 </div>
@@ -324,10 +303,9 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Muhammad Hassan Baba. All rights reserved. | Built with <span class="heart">❤️</span> and Code</p>
+            <p data-i18n-footer>© 2026 Muhammad Hassan Baba. All rights reserved. | Built with <span class="heart">❤️</span> and Code</p>
         </div>
     </footer>
 
