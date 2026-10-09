@@ -1,314 +1,576 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammad Hassan Baba | Full Stack Developer</title>
-    <meta name="description" content="Muhammad Hassan Baba - Elite Full Stack Developer. Building scalable, modern web applications with React, Node.js, and Laravel.">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Hassan Baba | Full Stack Developer</title>
+  <meta name="description" content="Muhammad Hassan Baba - Professional full stack developer creating scalable, elegant digital experiences." />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container navbar-content">
-            <div class="logo">
-                <span class="logo-icon">⚡</span> MHB
-            </div>
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <div class="logo" aria-label="Muhammad Hassan Baba">
+        <span class="logo-mark">⚡</span>
+        <span>MHB</span>
+      </div>
 
-            <div class="nav-menu">
-                <a href="#home" class="nav-link active" data-i18n="nav.home">Home</a>
-                <a href="#about" class="nav-link" data-i18n="nav.about">About</a>
-                <a href="#skills" class="nav-link" data-i18n="nav.skills">Skills</a>
-                <a href="#projects" class="nav-link" data-i18n="nav.projects">Projects</a>
-                <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
-            </div>
+      <div class="nav-menu">
+        <a href="#home" class="nav-link active" data-i18n="nav.home">Home</a>
+        <a href="#about" class="nav-link" data-i18n="nav.about">About</a>
+        <a href="#experience" class="nav-link" data-i18n="nav.experience">Experience</a>
+        <a href="#skills" class="nav-link" data-i18n="nav.skills">Skills</a>
+        <a href="#projects" class="nav-link" data-i18n="nav.projects">Projects</a>
+        <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
+      </div>
 
-            <div class="language-switcher" aria-label="Language selector">
-                <button class="lang-btn active" type="button" data-lang="en">EN</button>
-                <button class="lang-btn" type="button" data-lang="fa">FA</button>
-                <button class="lang-btn" type="button" data-lang="ru">RU</button>
-                <button class="lang-btn" type="button" data-lang="zh">中文</button>
-            </div>
-
-            <div class="hamburger" aria-label="Open menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+      <div class="nav-controls">
+        <div class="language-switcher" aria-label="Language selector">
+          <button class="lang-btn active" data-lang="en" type="button">EN</button>
+          <button class="lang-btn" data-lang="fa" type="button">FA</button>
+          <button class="lang-btn" data-lang="ru" type="button">RU</button>
+          <button class="lang-btn" data-lang="zh" type="button">中</button>
         </div>
-    </nav>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme">
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
 
+      <button class="hamburger" type="button" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
     <section id="home" class="hero">
-        <div class="stars"></div>
-        <div class="hero-content">
-            <div class="container">
-                <div class="hero-text">
-                    <h1 class="hero-title">
-                        <span class="word" data-i18n="hero.title_1">Muhammad</span>
-                        <span class="word" data-i18n="hero.title_2">Hassan</span>
-                        <span class="word" data-i18n="hero.title_3">Baba</span>
-                    </h1>
-                    <p class="hero-subtitle" data-i18n="hero.subtitle">Full Stack Developer & Digital Architect</p>
-                    <p class="hero-description" data-i18n="hero.description">
-                        Crafting elegant solutions to complex problems. Specialized in modern web technologies and scalable architecture.
-                    </p>
-                    <div class="hero-actions">
-                        <a href="#contact" class="btn btn-primary" data-i18n="hero.btn_contact">Get In Touch</a>
-                        <a href="#projects" class="btn btn-outline" data-i18n="hero.btn_projects">View My Work</a>
-                    </div>
-                </div>
+      <canvas id="bgCanvas"></canvas>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <div class="badge" data-i18n="hero.badge">Elite Developer</div>
+          <h1 class="hero-title">
+            <span data-i18n="hero.title_1">Muhammad</span>
+            <span data-i18n="hero.title_2">Hassan</span>
+            <span data-i18n="hero.title_3">Baba</span>
+          </h1>
+          <p class="hero-subtitle" data-i18n="hero.subtitle">Full Stack Developer & Digital Architect</p>
+          <p class="hero-description" data-i18n="hero.description">Building elegant, scalable digital experiences with a focus on performance, usability, and long-term impact.</p>
 
-                <div class="hero-visual">
-                    <div class="cube">
-                        <div class="cube-face front">React</div>
-                        <div class="cube-face back">Node.js</div>
-                        <div class="cube-face right">Laravel</div>
-                        <div class="cube-face left">Python</div>
-                        <div class="cube-face top">Full Stack</div>
-                        <div class="cube-face bottom">Web Dev</div>
-                    </div>
-                </div>
+          <div class="hero-stats">
+            <div class="mini-stat">
+              <strong>5+</strong>
+              <span data-i18n="hero.stat_years">Years Experience</span>
             </div>
+            <div class="mini-stat">
+              <strong>50+</strong>
+              <span data-i18n="hero.stat_projects">Projects</span>
+            </div>
+            <div class="mini-stat">
+              <strong>100%</strong>
+              <span data-i18n="hero.stat_satisfaction">Satisfaction</span>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">
+              <span data-i18n="hero.btn_projects">View My Work</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a class="btn btn-secondary" href="#contact">
+              <span data-i18n="hero.btn_contact">Get In Touch</span>
+              <i class="fas fa-paper-plane"></i>
+            </a>
+          </div>
+
+          <div class="tech-row">
+            <span class="tech-badge">React</span>
+            <span class="tech-badge">Node.js</span>
+            <span class="tech-badge">TypeScript</span>
+            <span class="tech-badge">AWS</span>
+            <span class="tech-badge">Docker</span>
+          </div>
         </div>
 
-        <div class="scroll-indicator">
-            <span data-i18n="hero.scroll">Scroll to explore</span>
-            <div class="scroll-arrow">↓</div>
+        <div class="hero-visual">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="floating-card card-one">
+            <i class="fas fa-code"></i>
+            <span>Code</span>
+          </div>
+          <div class="floating-card card-two">
+            <i class="fas fa-rocket"></i>
+            <span>Launch</span>
+          </div>
+          <div class="floating-card card-three">
+            <i class="fas fa-chart-line"></i>
+            <span>Scale</span>
+          </div>
+
+          <div class="cube-wrap">
+            <div class="cube">
+              <div class="face front">React</div>
+              <div class="face back">Node</div>
+              <div class="face right">TypeScript</div>
+              <div class="face left">AWS</div>
+              <div class="face top">Docker</div>
+              <div class="face bottom">MongoDB</div>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <span data-i18n="hero.scroll">Scroll to explore</span>
+        <div class="scroll-dots"><span></span><span></span><span></span></div>
+      </div>
     </section>
 
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2 data-i18n="about.title">About Me</h2>
-                <p class="section-subtitle" data-i18n="about.subtitle">Who I am and what I do</p>
-            </div>
-
-            <div class="about-content">
-                <div class="about-text">
-                    <p data-i18n="about.text_1">
-                        I'm a passionate Full Stack Developer with a knack for creating web applications that are not just functional, but beautiful and performant. With experience across the entire development stack, I deliver solutions that exceed expectations.
-                    </p>
-                    <p data-i18n="about.text_2">
-                        Based in London, I work with startups and companies to build digital solutions that make a real impact. My approach combines technical excellence with creative problem-solving.
-                    </p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <h3>5+</h3>
-                            <p data-i18n="about.years">Years Experience</p>
-                        </div>
-                        <div class="stat">
-                            <h3>30+</h3>
-                            <p data-i18n="about.projects">Projects Delivered</p>
-                        </div>
-                        <div class="stat">
-                            <h3>100%</h3>
-                            <p data-i18n="about.satisfaction">Client Satisfaction</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="about-visual">
-                    <div class="card-stack">
-                        <div class="card" data-i18n="about.card_1">Development</div>
-                        <div class="card" data-i18n="about.card_2">Design</div>
-                        <div class="card" data-i18n="about.card_3">Deployment</div>
-                    </div>
-                </div>
-            </div>
+    <section id="about" class="about section-space">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="about.tag">ABOUT ME</span>
+          <h2 data-i18n="about.title">Who I Am</h2>
+          <p data-i18n="about.subtitle">Passionate developer building modern digital experiences</p>
         </div>
+
+        <div class="about-grid">
+          <div class="about-copy">
+            <div class="glass-card highlight-card">
+              <h3 data-i18n="about.mission_title">My Mission</h3>
+              <p data-i18n="about.mission">To design elegant, scalable solutions that turn business ideas into reliable, measurable digital products.</p>
+            </div>
+
+            <p data-i18n="about.text_1">I’m a full-stack developer with expertise in frontend architecture, backend systems, and product strategy. My work delivers clarity, speed, and long-term maintainability.</p>
+            <p data-i18n="about.text_2">From handling performance tuning to shipping polished interfaces, I combine technical depth with product thinking to build experiences people enjoy using.</p>
+
+            <div class="check-list">
+              <div><i class="fas fa-check-circle"></i> <span data-i18n="about.highlight_1">Enterprise-Grade Architecture</span></div>
+              <div><i class="fas fa-check-circle"></i> <span data-i18n="about.highlight_2">Cloud & DevOps Expertise</span></div>
+              <div><i class="fas fa-check-circle"></i> <span data-i18n="about.highlight_3">AI & Automation</span></div>
+              <div><i class="fas fa-check-circle"></i> <span data-i18n="about.highlight_4">Real-Time Systems</span></div>
+            </div>
+          </div>
+
+          <div class="about-panel">
+            <div class="glass-card stats-card">
+              <h3 data-i18n="about.stats_title">Key Results</h3>
+              <div class="stats-grid">
+                <div class="stat-box">
+                  <strong>50+</strong>
+                  <span data-i18n="about.stat_projects">Projects Delivered</span>
+                </div>
+                <div class="stat-box">
+                  <strong>5+</strong>
+                  <span data-i18n="about.stat_years">Years Experience</span>
+                </div>
+                <div class="stat-box">
+                  <strong>100%</strong>
+                  <span data-i18n="about.stat_satisfaction">Satisfaction</span>
+                </div>
+                <div class="stat-box">
+                  <strong>30+</strong>
+                  <span data-i18n="about.stat_tech">Technologies</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="skills" class="skills">
-        <div class="container">
-            <div class="section-header">
-                <h2 data-i18n="skills.title">My Skills</h2>
-                <p class="section-subtitle" data-i18n="skills.subtitle">Technologies I work with</p>
-            </div>
-
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3><i class="fas fa-paint-brush"></i> <span data-i18n="skills.frontend">Frontend</span></h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <span class="skill-name">React.js</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">JavaScript / TypeScript</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">HTML / CSS / SCSS</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">UI/UX Design</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-server"></i> <span data-i18n="skills.backend">Backend</span></h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <span class="skill-name">Node.js / Express</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 92%"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Laravel / PHP</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 88%"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Python / Django</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">REST APIs</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-database"></i> <span data-i18n="skills.database">Database & Tools</span></h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <span class="skill-name">PostgreSQL / MySQL</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 88%"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">MongoDB / Firebase</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Git / GitHub</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Docker & DevOps</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 82%"></div></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section id="experience" class="experience section-space">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="experience.tag">PROFESSIONAL JOURNEY</span>
+          <h2 data-i18n="experience.title">Experience & Expertise</h2>
         </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass-card">
+              <div class="card-head">
+                <h3 data-i18n="experience.job_1_title">Senior Full Stack Developer</h3>
+                <span class="pill" data-i18n="experience.job_1_company">Tech Innovations Ltd</span>
+              </div>
+              <div class="period">2022 — Present</div>
+              <p data-i18n="experience.job_1_desc">Leading product and architecture for scalable systems, improving business operations with clean engineering and measurable value.</p>
+              <div class="tag-row">
+                <span>React</span><span>Node.js</span><span>AWS</span><span>TypeScript</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass-card">
+              <div class="card-head">
+                <h3 data-i18n="experience.job_2_title">Full Stack Developer</h3>
+                <span class="pill" data-i18n="experience.job_2_company">Digital Solutions Inc</span>
+              </div>
+              <div class="period">2020 — 2022</div>
+              <p data-i18n="experience.job_2_desc">Built and maintained customer-facing platforms, dashboards, and internal tools with strong performance and design discipline.</p>
+              <div class="tag-row">
+                <span>React</span><span>PostgreSQL</span><span>Redis</span><span>GraphQL</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass-card">
+              <div class="card-head">
+                <h3 data-i18n="experience.job_3_title">Junior Developer</h3>
+                <span class="pill" data-i18n="experience.job_3_company">Web Development Studio</span>
+              </div>
+              <div class="period">2018 — 2020</div>
+              <p data-i18n="experience.job_3_desc">Started with responsive websites and UI implementation, then expanded into full-stack engineering and product delivery.</p>
+              <div class="tag-row">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="projects" class="projects">
-        <div class="container">
-            <div class="section-header">
-                <h2 data-i18n="projects.title">Featured Projects</h2>
-                <p class="section-subtitle" data-i18n="projects.subtitle">Some of my recent work</p>
-            </div>
-
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                        <div class="project-overlay">
-                            <a href="#" class="project-link" data-i18n="projects.view_project">View Project</a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3 data-i18n="projects.project_1_title">E-Commerce Platform</h3>
-                        <p data-i18n="projects.project_1_desc">Full-stack e-commerce solution with React, Node.js, and MongoDB. Features include real-time inventory, payment processing, and admin dashboard.</p>
-                        <div class="project-tags">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
-                        <div class="project-overlay">
-                            <a href="#" class="project-link" data-i18n="projects.view_project">View Project</a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3 data-i18n="projects.project_2_title">SaaS Dashboard</h3>
-                        <p data-i18n="projects.project_2_desc">Analytics dashboard for tracking user metrics. Built with React, TypeScript, and real-time data visualization with Chart.js.</p>
-                        <div class="project-tags">
-                            <span>React</span>
-                            <span>TypeScript</span>
-                            <span>Firebase</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
-                        <div class="project-overlay">
-                            <a href="#" class="project-link" data-i18n="projects.view_project">View Project</a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3 data-i18n="projects.project_3_title">Social Network App</h3>
-                        <p data-i18n="projects.project_3_desc">Real-time social platform with messaging, notifications, and media sharing. Laravel backend with Vue.js frontend.</p>
-                        <div class="project-tags">
-                            <span>Laravel</span>
-                            <span>Vue.js</span>
-                            <span>PostgreSQL</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section id="skills" class="skills section-space">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="skills.tag">TECHNICAL ARSENAL</span>
+          <h2 data-i18n="skills.title">Skills & Expertise</h2>
+          <p data-i18n="skills.subtitle">Modern tools for building reliable digital products</p>
         </div>
+
+        <div class="skills-wrap">
+          <div class="skill-group glass-card">
+            <div class="group-title"><i class="fas fa-palette"></i> <span data-i18n="skills.frontend">Frontend Engineering</span></div>
+            <div class="skill-item">
+              <div class="skill-top"><span>React.js</span><span>98%</span></div>
+              <div class="progress"><span style="width:98%"></span></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-top"><span>TypeScript</span><span>95%</span></div>
+              <div class="progress"><span style="width:95%"></span></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-top"><span>Next.js</span><span>92%</span></div>
+              <div class="progress"><span style="width:92%"></span></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-top"><span>CSS / SCSS</span><span>96%</span></div>
+              <div class="progress"><span style="width:96%"></span></div>
+            </div>
+          </div>
+
+          <div class="skill-group glass-card">
+            <div class="group-title"><i class="fas fa-server"></i> <span data-i18n="skills.backend">Backend Engineering</span></div>
+            <div class="skill-item">
+              <div class="skill-top"><span>Node.js</span><span>97%</span></div>
+              <div class="progress"><span style="width:97%"></span></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-top"><span>Python</span><span>90%</span></div>
+              <div class="progress"><span style="width:90%"></span></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-top"><span>REST APIs</span><span>96%</span></div>
+              <div class="progress"><span style="width:96%"></span></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-top"><span>GraphQL</span><span>88%</span></div>
+              <div class="progress"><span style="width:88%"></span></div>
+            </div>
+          </div>
+
+          <div class="skill-group glass-card">
+            <div class="group-title"><i class="fas fa-cloud"></i> <span data-i18n="skills.devops">Cloud & DevOps</span></div>
+            <div class="skill-item">
+              <div class="skill-top"><span>AWS</span><span>94%</span></div>
+              <div class="progress"><span style="width:94%"></span></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-top"><span>Docker</span><span>95%</span></div>
+              <div class="progress"><span style="width:95%"></span></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-top"><span>CI/CD</span><span>93%</span></div>
+              <div class="progress"><span style="width:93%"></span></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-top"><span>Terraform</span><span>90%</span></div>
+              <div class="progress"><span style="width:90%"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 data-i18n="contact.title">Get In Touch</h2>
-                <p class="section-subtitle" data-i18n="contact.subtitle">Let's work together on your next project</p>
-            </div>
-
-            <div class="contact-content">
-                <div class="contact-form-wrapper">
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <input type="text" data-i18n-placeholder="contact.name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" data-i18n-placeholder="contact.email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea rows="5" data-i18n-placeholder="contact.message" placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary" data-i18n="contact.send">Send Message</button>
-                    </form>
-                </div>
-
-                <div class="contact-info">
-                    <div class="info-box">
-                        <h3><i class="fas fa-map-marker-alt"></i> <span data-i18n="contact.location">Location</span></h3>
-                        <p data-i18n="contact.location_text">London, United Kingdom</p>
-                    </div>
-                    <div class="info-box">
-                        <h3><i class="fas fa-envelope"></i> <span data-i18n="contact.email_title">Email</span></h3>
-                        <p><a href="mailto:hello@mhb.dev" data-i18n="contact.email_text">hello@mhb.dev</a></p>
-                    </div>
-                    <div class="info-box">
-                        <h3><i class="fas fa-globe"></i> <span data-i18n="contact.social">Social</span></h3>
-                        <div class="social-links">
-                            <a href="https://github.com/has2sanbaba" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                            <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section id="projects" class="projects section-space">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="projects.tag">PORTFOLIO</span>
+          <h2 data-i18n="projects.title">Featured Projects</h2>
+          <p data-i18n="projects.subtitle">Business-focused solutions designed to scale</p>
         </div>
+
+        <div class="projects-grid">
+          <article class="project-card glass-card">
+            <div class="project-banner gradient-one"></div>
+            <div class="project-body">
+              <div class="project-head">
+                <span class="pill">Enterprise</span>
+              </div>
+              <h3 data-i18n="projects.project_1_title">AI-Powered E-Commerce Platform</h3>
+              <p data-i18n="projects.project_1_desc">Built a high-growth e-commerce platform with AI recommendations, smart search, analytics, and streamlined checkout flows.</p>
+              <div class="tag-row">
+                <span>React</span><span>Node.js</span><span>PostgreSQL</span><span>AWS</span>
+              </div>
+              <a href="#" class="project-link">
+                <span data-i18n="projects.view_details">View Details</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card glass-card">
+            <div class="project-banner gradient-two"></div>
+            <div class="project-body">
+              <div class="project-head">
+                <span class="pill">Analytics</span>
+              </div>
+              <h3 data-i18n="projects.project_2_title">Real-Time Analytics Dashboard</h3>
+              <p data-i18n="projects.project_2_desc">Created a live executive dashboard for monitoring KPIs, customer activity, and operational performance in real time.</p>
+              <div class="tag-row">
+                <span>React</span><span>D3.js</span><span>MongoDB</span><span>WebSockets</span>
+              </div>
+              <a href="#" class="project-link">
+                <span data-i18n="projects.view_details">View Details</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card glass-card">
+            <div class="project-banner gradient-three"></div>
+            <div class="project-body">
+              <div class="project-head">
+                <span class="pill">Social</span>
+              </div>
+              <h3 data-i18n="projects.project_3_title">Real-Time Social Network</h3>
+              <p data-i18n="projects.project_3_desc">Built a scalable community platform with instant messaging, notifications, and media-rich interactions for large audiences.</p>
+              <div class="tag-row">
+                <span>Node.js</span><span>Socket.io</span><span>Redis</span><span>React</span>
+              </div>
+              <a href="#" class="project-link">
+                <span data-i18n="projects.view_details">View Details</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card glass-card">
+            <div class="project-banner gradient-four"></div>
+            <div class="project-body">
+              <div class="project-head">
+                <span class="pill">Fintech</span>
+              </div>
+              <h3 data-i18n="projects.project_4_title">Secure Payment Gateway</h3>
+              <p data-i18n="projects.project_4_desc">Developed a secure payment flow with fraud checks, settlement logic, and compliance-ready payment processing.</p>
+              <div class="tag-row">
+                <span>Node.js</span><span>Stripe</span><span>PostgreSQL</span><span>AWS KMS</span>
+              </div>
+              <a href="#" class="project-link">
+                <span data-i18n="projects.view_details">View Details</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <footer class="footer">
-        <div class="container">
-            <p data-i18n-footer>© 2026 Muhammad Hassan Baba. All rights reserved. | Built with <span class="heart">❤️</span> and Code</p>
+    <section class="testimonials section-space">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="testimonials.tag">TESTIMONIALS</span>
+          <h2 data-i18n="testimonials.title">What Clients Say</h2>
         </div>
-    </footer>
 
-    <script src="script.js"></script>
+        <div class="testimonial-grid">
+          <div class="testimonial-card glass-card">
+            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p data-i18n="testimonials.quote_1">Muhammad transformed our legacy system into a modern platform that performs beautifully and scales with our growth.</p>
+            <div class="person">
+              <div class="avatar">JD</div>
+              <div>
+                <strong>John Developer</strong>
+                <span data-i18n="testimonials.role_1">CTO</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card glass-card">
+            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p data-i18n="testimonials.quote_2">The craftsmanship, speed, and communication were outstanding. The final product exceeded our expectations in every way.</p>
+            <div class="person">
+              <div class="avatar">SM</div>
+              <div>
+                <strong>Sarah Manager</strong>
+                <span data-i18n="testimonials.role_2">Project Lead</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card glass-card">
+            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p data-i18n="testimonials.quote_3">A true full-stack partner. The solution was not only technically strong, but also aligned with our business goals.</p>
+            <div class="person">
+              <div class="avatar">RC</div>
+              <div>
+                <strong>Robert CEO</strong>
+                <span data-i18n="testimonials.role_3">Founder</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section-space">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="contact.tag">COLLABORATION</span>
+          <h2 data-i18n="contact.title">Let’s Build Something Great</h2>
+          <p data-i18n="contact.subtitle">Have a project in mind? Let's talk and create something impactful.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-form-wrap glass-card">
+            <form id="contactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name" data-i18n="contact.name_label">Full Name</label>
+                  <input id="name" type="text" data-i18n-placeholder="contact.name" placeholder="Your Name" required />
+                </div>
+                <div class="form-group">
+                  <label for="email" data-i18n="contact.email_label">Email</label>
+                  <input id="email" type="email" data-i18n-placeholder="contact.email" placeholder="your@email.com" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject" data-i18n="contact.subject_label">Project Subject</label>
+                <input id="subject" type="text" data-i18n-placeholder="contact.subject" placeholder="What are you building?" required />
+              </div>
+
+              <div class="form-group">
+                <label for="message" data-i18n="contact.message_label">Message</label>
+                <textarea id="message" rows="5" data-i18n-placeholder="contact.message" placeholder="Tell me about your vision..." required></textarea>
+              </div>
+
+              <button class="btn btn-primary" type="submit">
+                <span data-i18n="contact.send">Send Message</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+
+          <div class="contact-side">
+            <div class="contact-card glass-card">
+              <h3 data-i18n="contact.info_title">Quick Contact</h3>
+
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <span class="meta-label" data-i18n="contact.location">Location</span>
+                  <p data-i18n="contact.location_text">London, United Kingdom</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <span class="meta-label" data-i18n="contact.email_title">Email</span>
+                  <p><a href="mailto:hello@mhb.dev">hello@mhb.dev</a></p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <span class="meta-label" data-i18n="contact.phone">Phone</span>
+                  <p><a href="tel:+447123456789">+44 7123 456789</a></p>
+                </div>
+              </div>
+
+              <div class="social-links">
+                <a href="https://github.com/has2sanbaba" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+
+            <div class="availability glass-card">
+              <h3 data-i18n="contact.availability">Availability</h3>
+              <div class="status-row">
+                <span class="status-dot"></span>
+                <span data-i18n="contact.available">Available for new projects</span>
+              </div>
+              <p data-i18n="contact.response_time">Typically replies within 24 hours.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Muhammad Hassan Baba</h4>
+          <p data-i18n="footer.tagline">Building digital experiences with precision and vision.</p>
+        </div>
+        <div>
+          <h4 data-i18n="footer.quick_links">Quick Links</h4>
+          <ul>
+            <li><a href="#home" data-i18n="footer.home">Home</a></li>
+            <li><a href="#about" data-i18n="footer.about">About</a></li>
+            <li><a href="#projects" data-i18n="footer.projects">Projects</a></li>
+            <li><a href="#contact" data-i18n="footer.contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer.services">Services</h4>
+          <ul>
+            <li data-i18n="footer.service_1">Full Stack Development</li>
+            <li data-i18n="footer.service_2">Cloud Architecture</li>
+            <li data-i18n="footer.service_3">DevOps & Automation</li>
+            <li data-i18n="footer.service_4">Technical Consulting</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p data-i18n="footer.copyright">© 2026 Muhammad Hassan Baba. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" type="button" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
 </body>
 </html>
